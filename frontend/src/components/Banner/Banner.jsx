@@ -1,7 +1,7 @@
 import BannerImg from "../../assets/Banner/juice.png";
 import Splash from "../../assets/Banner/splash.png";
 import { motion } from "motion/react";
-import { fadeUp } from "../products/products";
+import { fadeUp } from "../Products/Products.jsx";
 
 const Banner = () => {
   return (
