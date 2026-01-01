@@ -30,7 +30,7 @@ const FAQ = () => {
   };
 
   return (
-    <section id="faq" className="max-w-2xl mx-auto mt-20 mb-28 py-4 app-container">
+    <section id="faq" className="max-w-2xl md:max-w-4xl mx-auto mt-20 mb-28 py-4 app-container">
       <h1 className="text-3xl font-bold text-center pb-8">
         Frequently Asked Questions
       </h1>

@@ -18,6 +18,7 @@ const Banner = () => {
               opacity: 1,
               x: 0,
             }}
+            viewport={{ once: true }}
             transition={{
               duration: 0.8,
               delay: 0.2,
@@ -40,6 +41,7 @@ const Banner = () => {
               rotate: 0,
               scale: 1,
             }}
+            viewport={{ once: true }}
             transition={{
               duration: 0.8,
               delay: 0.2,
@@ -55,17 +57,19 @@ const Banner = () => {
         <div className="flex flex-col justify-center">
           <div className="text-center md:text-left space-y-4 lg:max-w-112.5">
             <motion.h1
-              variants={fadeUp(0.7)}
+              variants={fadeUp(0.6)}
               initial="hidden"
               whileInView="show"
+              viewport={{ once: true }}
               className="text-3xl lg:text-4xl font-semibold"
             >
               Refresh Your World with Fanta
             </motion.h1>
             <motion.p
-              variants={fadeUp(0.9)}
+              variants={fadeUp(0.8)}
               initial="hidden"
               whileInView="show"
+              viewport={{ once: true }}
               className="text-gray-500"
             >
               Fanta brings a burst of vibrant flavors and effervescent fun to
@@ -76,9 +80,12 @@ const Banner = () => {
               your senses with its bold, bubbly, and refreshing taste!
             </motion.p>
             <motion.button
-              variants={fadeUp(1.0)}
+              variants={fadeUp(0.8)}
               initial="hidden"
               whileInView="show"
+              viewport={{ once: true }}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
               className="mt-5 border-2 border-primary text-primary px-6 py-2 rounded-md hover:bg-primary hover:text-white duration-200"
             >
               Shp Now

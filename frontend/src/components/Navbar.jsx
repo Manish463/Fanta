@@ -1,6 +1,8 @@
 import Logo from "../assets/logo.png";
 import { MdMenu } from "react-icons/md";
 import { motion } from "motion/react";
+import { useEffect, useState } from "react";
+import { RxCross1 } from "react-icons/rx";
 
 const NavbarMenu = [
   {
@@ -36,6 +38,19 @@ const NavbarMenu = [
 ];
 
 const Navbar = () => {
+  const [show, setShow] = useState(window.innerWidth > 768);
+
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      setShow(window.innerWidth > 768);
+    });
+
+    return () =>
+      window.removeEventListener("resize", () =>
+        setShow(window.innerWidth > 768)
+      );
+  });
+
   return (
     <div className="text-white py-8">
       <motion.div
@@ -50,8 +65,21 @@ const Navbar = () => {
         </div>
 
         {/* Menu section */}
-        <div className="hidden md:block">
-          <ul className="flex items-center gap-4 relative z-40">
+        {show && (
+          <ul
+            className="
+            flex flex-col absolute top-15 right-10 items-center bg-white/10 backdrop-blur-md border-2 rounded-2xl px-12 pt-8 pb-4 z-101
+            md:flex-row md:relative md:top-auto md:right-auto md:bg-white/0 md:backdrop-blur-none md:border-0 md:py-4 md:gap-4 md:z-40 
+            "
+          >
+            <button
+              onClick={() => {
+                setShow(false);
+              }}
+              className="absolute right-5 top-5 flex md:hidden"
+            >
+              <RxCross1 className="font-bold" />
+            </button>
             {NavbarMenu.map((item) => (
               <li key={item.id}>
                 <a
@@ -64,12 +92,17 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-        </div>
+        )}
 
         {/* hamburger section */}
-        <div className="md:hidden">
+        { !show && <button
+          onClick={() => {
+            setShow(true);
+          }}
+          className="md:hidden z-99"
+        >
           <MdMenu className="text-4xl" />
-        </div>
+        </button>}
       </motion.div>
     </div>
   );

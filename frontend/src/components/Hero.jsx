@@ -228,7 +228,7 @@ const Hero = ({ props }) => {
                       duration: 0.4,
                     },
                   }}
-                  className="text-white/5 text-[300px] font-poppins font-extrabold absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                  className="text-white/5 text-9xl md:text-[300px] font-poppins font-extrabold absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2"
                 >
                   {activeData.modal}
                 </motion.div>

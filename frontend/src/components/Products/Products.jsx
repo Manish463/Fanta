@@ -52,6 +52,7 @@ const Products = () => {
           variants={fadeUp(0.2)}
           initial="hidden"
           whileInView="show"
+          viewport={{ once: true }}
           className="text-3xl font-bold text-center pb-10"
         >
           Our Products
@@ -65,6 +66,7 @@ const Products = () => {
               key={item.id}
               initial="hidden"
               whileInView="show"
+              viewport={{ once: true }}
               className="flex flex-col items-center justify-center p-5 max-w-75 shadow-lg rounded-xl bg-white mx-auto"
             >
               <img
@@ -77,9 +79,13 @@ const Products = () => {
                   {item.title}
                 </h1>
                 <p className="text-center text-sm text-gray-600">{item.desc}</p>
-                <button className="mt-5 border-2 border-primary text-primary px-6 py-2 rounded-md hover:bg-primary hover:text-white duration-200">
+                <motion.button
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="mt-5 border-2 border-primary text-primary px-6 py-2 rounded-md hover:bg-primary hover:text-white duration-100"
+                >
                   Buy Now
-                </button>
+                </motion.button>
               </div>
             </motion.div>
           ))}

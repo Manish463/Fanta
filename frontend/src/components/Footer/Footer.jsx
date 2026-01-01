@@ -19,6 +19,7 @@ const Footer = () => {
           <motion.div
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{
                 delay: 0.2,
                 duration: 0.6,
@@ -32,7 +33,7 @@ const Footer = () => {
                 +1 (123) 456-7890
               </p>
               <p className="flex items-center gap-2 mt-2">
-                <FaMapLocation /> Noida, Utter Pradesh
+                <FaMapLocation /> Asansol, West Bengal
               </p>
             </div>
           </motion.div>
@@ -41,6 +42,7 @@ const Footer = () => {
           <motion.div
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{
                 delay: 0.4,
                 duration: 0.6,
@@ -48,8 +50,8 @@ const Footer = () => {
             className="space-y-6"
           >
             <h1 className="text-3xl font-bold">Quick Links</h1>
-            <div className="grid grid-cols-1 sm:grid-cols-2">
-              <div className="flex flex-col">
+            <div className="grid grid-cols-2 gap-4">
+              <div className="flex flex-col mb-2">
                   <a href="#home">Home</a>
                   <a href="#products">Products</a>
                   <a href="#about">About</a>
@@ -57,7 +59,7 @@ const Footer = () => {
                   <a href="#faq">FAQ</a>
                   <a href="#contact">Contact</a>
               </div>
-              <div className="flex flex-col">
+              <div className="flex flex-col mb-2">
                   <a href="#home">Home</a>
                   <a href="#products">Products</a>
                   <a href="#about">About</a>
@@ -72,6 +74,7 @@ const Footer = () => {
           <motion.div
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
             transition={{
                 delay: 0.6,
                 duration: 0.6,
@@ -80,10 +83,10 @@ const Footer = () => {
           >
             <h1 className="text-3xl font-bold">Follow Us</h1>
             <div className="flex items-center gap-3">
-                <FaFacebook className="text-3xl hover:scale-105 duration-300" />
-                <FaGoogle className="text-3xl hover:scale-105 duration-300" />
-                <FaInstagram className="text-3xl hover:scale-105 duration-300" />
-                <FaTelegram className="text-3xl hover:scale-105 duration-300" />
+                <FaFacebook className="text-3xl hover:scale-110 duration-300" />
+                <FaGoogle className="text-3xl hover:scale-110 duration-300" />
+                <FaInstagram className="text-3xl hover:scale-110 duration-300" />
+                <FaTelegram className="text-3xl hover:scale-110 duration-300" />
             </div>
             <div className="space-y-2">
                 <p>Payment Methods</p>
