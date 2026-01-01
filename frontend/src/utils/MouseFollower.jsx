@@ -2,7 +2,6 @@ import { motion, useMotionValue, useSpring } from "motion/react";
 import { useEffect, useState, useRef } from "react";
 
 export default () => {
-  // const { activeData } = props;
   const ref = useRef(null);
 
   const [el, setEl] = useState(null);
@@ -66,7 +65,6 @@ export default () => {
           ? "z-10 bg-black!"
           : ""
       }
-
       `}
     />
   );

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Fanta1 from "../assets/fanta1.png";
 import Fanta2 from "../assets/fanta2.png";
 import Fanta3 from "../assets/fanta3.png";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import Navbar from "./Navbar";
 import {
   motion,
@@ -129,6 +129,12 @@ const Hero = ({ props }) => {
                   <motion.button
                     key={activeData.id}
                     variants={SlideRight(0.6)}
+                    whileHover={{
+                      scale: 1.1,
+                      backgroundColor: activeData.bgColor,
+                      color: "white",
+                    }}
+                    whileTap={{ scale: 0.95 }}
                     initial="hidden"
                     animate="show"
                     exit="exit"
@@ -230,9 +236,9 @@ const Hero = ({ props }) => {
             </div>
 
             {/* whatsapp icons */}
-            <div className="text-3xl text-white fixed bottom-10 right-10 hover:rotate-360 duration-500 z-99999 mix-blend-difference">
-              <a href="#">
-                <FaWhatsapp />
+            <div className="text-4xl fixed bottom-10 right-10 hover:scale-110 duration-500 z-99999">
+              <a data-hide href="https://github.com/Manish463">
+                <FaGithub />
               </a>
             </div>
           </div>
