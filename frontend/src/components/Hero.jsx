@@ -86,7 +86,7 @@ const Hero = ({ props }) => {
   }, []);
 
   return (
-    <>
+    <section id="home">
       <motion.div
         initial={{ backgroundColor: activeData.bgColor }}
         animate={{ backgroundColor: activeData.bgColor }}
@@ -238,7 +238,7 @@ const Hero = ({ props }) => {
           </div>
         </div>
       </motion.div>
-    </>
+    </section>
   );
 };
 

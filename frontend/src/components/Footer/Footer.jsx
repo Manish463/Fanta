@@ -12,7 +12,7 @@ import { motion } from "motion/react";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-white pt-12 pb-8">
+    <footer id="contact" className="bg-primary text-white pt-12 pb-8">
       <div className="app-container">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {/* company details section */}
@@ -37,7 +37,7 @@ const Footer = () => {
             </div>
           </motion.div>
 
-          {/* Footer links section */}
+          {/* Footer Links section */}
           <motion.div
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -48,19 +48,27 @@ const Footer = () => {
             className="space-y-6"
           >
             <h1 className="text-3xl font-bold">Quick Links</h1>
-            <div className="grid">
-              <div>
-                <ul className="space-y-2">
-                  <li>Home</li>
-                  <li>About</li>
-                  <li>Contact Us</li>
-                  <li>Privacy Policy</li>
-                </ul>
+            <div className="grid grid-cols-1 sm:grid-cols-2">
+              <div className="flex flex-col">
+                  <a href="#home">Home</a>
+                  <a href="#products">Products</a>
+                  <a href="#about">About</a>
+                  <a href="#blogs">Blogs</a>
+                  <a href="#faq">FAQ</a>
+                  <a href="#contact">Contact</a>
+              </div>
+              <div className="flex flex-col">
+                  <a href="#home">Home</a>
+                  <a href="#products">Products</a>
+                  <a href="#about">About</a>
+                  <a href="#blogs">Blogs</a>
+                  <a href="#faq">FAQ</a>
+                  <a href="#contact">Contact</a>
               </div>
             </div>
           </motion.div>
 
-          {/* Social links section */}
+          {/* Social Links section */}
           <motion.div
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}

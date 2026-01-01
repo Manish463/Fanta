@@ -1,38 +1,37 @@
 import Logo from "../assets/logo.png";
 import { MdMenu } from "react-icons/md";
-import { FaRegUser } from "react-icons/fa";
 import { motion } from "motion/react";
 
 const NavbarMenu = [
   {
     id: 1,
     title: "Home",
-    link: "#",
+    link: "#home",
   },
   {
     id: 2,
     title: "Products",
-    link: "#",
+    link: "#products",
   },
   {
     id: 3,
     title: "About",
-    link: "#",
+    link: "#about",
   },
   {
     id: 4,
     title: "Blog",
-    link: "#",
+    link: "#blogs",
   },
   {
     id: 5,
     title: "FAQ",
-    link: "#",
+    link: "#faq",
   },
   {
     id: 6,
     title: "Contact",
-    link: "#",
+    link: "#contact",
   },
 ];
 

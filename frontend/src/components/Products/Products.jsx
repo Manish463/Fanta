@@ -46,7 +46,7 @@ const ProductsData = [
 
 const Products = () => {
   return (
-    <div className="bg-gray-100 py-8">
+    <section id="products" className="bg-gray-100 py-8">
       <div className="app-container py-14">
         <motion.h1
           variants={fadeUp(0.2)}
@@ -85,7 +85,7 @@ const Products = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

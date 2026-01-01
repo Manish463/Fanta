@@ -5,7 +5,7 @@ import { fadeUp } from "../Products/Products.jsx";
 
 const Banner = () => {
   return (
-    <section>
+    <section id="about">
       <div className="app-container grid grid-cols-1 md:grid-cols-2 space-y-6 md:space-y-0 gap-12">
         {/* Banner Image Section */}
         <div className="relative">

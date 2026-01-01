@@ -36,7 +36,7 @@ const BlogsData = [
 
 const Blogs = () => {
   return (
-    <section className="bg-gray-50">
+    <section id="blogs" className="bg-gray-50">
       <div className="app-container py-14">
         <h1 className="text-3xl font-bold text-center pb-8">Blogs</h1>
 
