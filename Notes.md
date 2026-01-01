@@ -22,6 +22,8 @@
 
 font prefix with `--font-` and colors prefix with `--color-`.
 
-## 2. react icons is a package provided by the react which we can found different type of icons.
+## 2. react icons package
 
-[web-app-link](https://react-icons.github.io/react-icons/)
+This is a package which provide a lots of icons.
+
+[react-icons](https://react-icons.github.io/react-icons/)
